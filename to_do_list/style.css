@@ -4,6 +4,8 @@
   list-style: none;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #333 rgb(245, 225, 111);
 }
 
 html {
@@ -22,7 +24,7 @@ body {
   transform: translateX(-50%);
   width: 40vw;
   max-width: 600px;
-  min-height: 80vh;
+  height: 80vh;
   padding: 10px 20px;
   background-color: var(--yellow);
   border-radius: 3px;
@@ -41,7 +43,7 @@ ul {
 
 .list {
   overflow-y: scroll;
-  height: 70%;
+  height: 80%;
 }
 
 li {
@@ -118,6 +120,20 @@ form.search button {
   color: var(--gray);
   border: 3px solid var(--yellow);
   cursor: auto;
+}
+
+/* scrollbar on Chrome, Edge, and Safari*/
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--yellow);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 20px;
 }
 
 @media (max-width: 1024px) {
