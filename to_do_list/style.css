@@ -8,6 +8,20 @@
   scrollbar-color: #333 rgb(245, 225, 111);
 }
 
+/* scrollbar on Chrome, Edge, and Safari*/
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--yellow);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 20px;
+}
+
 html {
   --gray: #333;
   --yellow: rgb(245, 225, 111);
@@ -120,20 +134,6 @@ form.search button {
   color: var(--gray);
   border: 3px solid var(--yellow);
   cursor: auto;
-}
-
-/* scrollbar on Chrome, Edge, and Safari*/
-*::-webkit-scrollbar {
-  width: 6px;
-}
-
-*::-webkit-scrollbar-track {
-  background: var(--yellow);
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #333;
-  border-radius: 20px;
 }
 
 @media (max-width: 1024px) {
