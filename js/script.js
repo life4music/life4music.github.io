@@ -11,17 +11,17 @@ function changeSection() {
   const about = document.querySelector('.about');
   const skills = document.querySelector('.skills');
   const projects = document.querySelector('.projects');
-  const contact = document.querySelector('.contact');
+  // const contact = document.querySelector('.contact');
 
   const halfAboutHeight = about.clientHeight * .4;
   const halfSkillsHeight = skills.clientHeight * .4;
   const halfProjectsHeight = projects.clientHeight * .3;
-  const halfContactHeight = contact.clientHeight * .4;
+  // const halfContactHeight = contact.clientHeight * .4;
 
   const aboutOffset = about.offsetTop;
   const skillsOffset = skills.offsetTop;
   const projectsOffset = projects.offsetTop;
-  const contactOffset = contact.offsetTop;
+  // const contactOffset = contact.offsetTop;
 
   if(scroll  < aboutOffset - halfAboutHeight ) {
     menu.forEach(li => li.style.color = "#333");
@@ -35,10 +35,10 @@ function changeSection() {
     menu.forEach(li => li.style.color = "#333");
     menu[2].style.color = "#fff";
   } 
-  if(scroll > contactOffset - halfContactHeight || scroll + window.innerHeight >= document.body.scrollHeight - 10) {
-    menu.forEach(li => li.style.color = "#333");
-    menu[3].style.color = "#fff";
-  } 
+  // if(scroll > contactOffset - halfContactHeight || scroll + window.innerHeight >= document.body.scrollHeight - 10) {
+  //   menu.forEach(li => li.style.color = "#333");
+  //   menu[3].style.color = "#fff";
+  // } 
 }
 
 // sprawdzenie formularza
@@ -62,6 +62,6 @@ function checkForm(e) {
   }
 }
 
-document.querySelector('form').addEventListener('submit', checkForm);
+// document.querySelector('form').addEventListener('submit', checkForm);
 document.querySelectorAll('nav li').forEach(li => li.addEventListener('click', goToSection));
 window.addEventListener('scroll', changeSection);
