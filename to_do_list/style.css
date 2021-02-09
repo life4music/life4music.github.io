@@ -21,6 +21,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 40vw;
+  max-width: 600px;
   min-height: 80vh;
   padding: 10px 20px;
   background-color: var(--yellow);
@@ -36,6 +37,11 @@ h1 {
 
 ul {
   padding: 15px 0;
+}
+
+.list {
+  overflow-y: scroll;
+  height: 70%;
 }
 
 li {
@@ -112,4 +118,34 @@ form.search button {
   color: var(--gray);
   border: 3px solid var(--yellow);
   cursor: auto;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 540px) {
+  .wrapper {
+    width: 70vw;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 414px) {
+  .wrapper {
+    width: 90vw;
+    height: 90%;
+    top: 5%;
+  }
+}
+
+@media (max-width: 320px) {
+  h2 {
+    font-size: 13px;
+  }
 }

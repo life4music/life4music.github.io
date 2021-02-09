@@ -5,7 +5,7 @@ const inputSearch = document.querySelector('.search input');
 const ul = document.querySelector('ul');
 const number = document.querySelector('h2 span');
 const list = document.getElementsByClassName('liElement');
-const shopList = [...list];
+let shopList = [...list];
 const btnClear = document.querySelector(".clear");
 
 // odświeżenie listy
@@ -16,6 +16,8 @@ const renderList = () => {
         ul.appendChild(product);
     })
     number.textContent = list.length;
+
+    console.log(shopList);
 }
 
 // dodanie nowego elementu
@@ -63,11 +65,7 @@ const removeItem = (e) => {
 
 // usuwanie skreślonych elementów
 const clearList = () => {
-    shopList.forEach((li,i) => {
-        if(li.classList.contains('crossed')){
-            shopList.splice(i,1);
-        }
-    });
+    shopList = shopList.filter(li => !li.classList.contains('crossed'));
     renderList();
 }
 
