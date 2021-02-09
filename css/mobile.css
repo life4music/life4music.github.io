@@ -1,0 +1,474 @@
+@media (max-width:1600px) {
+  h1 {
+    margin: 10px 0;
+    font-size: 4rem;
+  }
+
+  /* menu */
+  nav ul {
+    top: 40%;
+  }
+
+  /* hobby */
+  .hobby div {
+    height: 45vh;
+  }
+
+  .hobby p {
+    line-height: 45vh;
+  }
+
+  /* projects */
+  .project h2 {
+    margin-bottom: 15px;
+    padding: 7px 20px;
+  }
+
+  .project ul {
+    margin-top: 10px;
+  }
+
+  .project ul li {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width:1440px) {
+
+  /* header */
+  .text {
+    margin-left: 60px;
+  }
+
+  /* skills */
+  .icons img {
+    height: 80px;
+  }
+
+  .icons span {
+    line-height: 80px;
+  }
+
+  /* projects */
+  .project a {
+    margin-top: 7px;
+  }
+}
+
+@media (max-width: 1366px) {
+
+  /* header */
+  header {
+    height: 100vh;
+  }
+
+  /* hobby */
+  .hobby div {
+    height: 50vh;
+  }
+
+  .hobby p {
+    line-height: 50vh;
+  }
+
+  /* contact */
+  .contact textarea {
+    flex-basis: 280px;
+  }
+}
+
+@media (max-width: 1366px) and (min-height: 1024px) {
+
+  /* header */
+  header {
+    height: 80vh;
+  }
+
+  /* hobby */
+  .hobby div {
+    height: 39vh;
+  }
+
+  .hobby p {
+    line-height: 39vh;
+    opacity: .4;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  /* header */
+  .image {
+    flex-basis: 60%;
+  }
+
+  .image img.color {
+    height: 40%;
+  }
+
+  /* hobby */
+  .hobby div {
+    height: 38vh;
+  }
+
+  .hobby p {
+    line-height: 38vh;
+    opacity: .4;
+  }
+}
+
+@media (max-width: 824px) {
+  html {
+    font-size: 9px;
+  }
+
+  /* menu */
+  nav ul {
+    top: 30%;
+  }
+
+  /* header */
+  .text {
+    flex-basis: 50%;
+  }
+
+  .image {
+    flex-basis: 50%;
+  }
+
+  /* hobby */
+  .hobby div {
+    height: 48vh;
+  }
+
+  .hobby p {
+    line-height: 48vh;
+  }
+
+  /* skills */
+  .skills .wrap {
+    justify-content: center;
+  }
+
+  .skills .icons {
+    flex-basis: 35%;
+  }
+
+  .icons img {
+    height: 70px;
+  }
+
+  .icons span {
+    line-height: 70px;
+  }
+
+  /* projects */
+  .project h2 {
+    margin-bottom: 10px;
+    padding: 5px 20px;
+  }
+
+  .project .info p {
+    padding: 0 10px;
+    font-size: 1.5rem;
+  }
+
+  .project ul {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: 5px auto;
+  }
+
+  .project ul li {
+    margin: 0;
+  }
+
+  /* contact */
+  .contact form {
+    width: 60%;
+  }
+
+  .contact textarea {
+    flex-basis: 200px;
+  }
+
+  .contact button {
+    padding: 8px;
+  }
+
+  /* footer */
+  footer {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 720px) {
+
+  /* hobby */
+  .hobby div {
+    height: 37vh;
+  }
+
+  .hobby p {
+    line-height: 37vh;
+  }
+}
+
+@media (max-width:668px) {
+  html {
+    font-size: 8px;
+  }
+
+  /* menu */
+  .social a img {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  /* hobby */
+  .hobby div {
+    height: 48vh;
+  }
+
+  .hobby p {
+    line-height: 48vh;
+  }
+
+  /* contact */
+  .contact textarea {
+    flex-basis: 160px;
+  }
+}
+
+@media (max-width: 570px) {
+  html {
+    font-size: 7px;
+  }
+
+  /* skills */
+  .skills .icons {
+    flex-basis: 40%;
+  }
+
+  .icons img {
+    height: 60px;
+  }
+
+  .icons span {
+    line-height: 60px;
+  }
+
+  /* projects */
+  .project ul {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  html {
+    font-size: 14px;
+  }
+
+  /* header */
+  header {
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .text {
+    flex-basis: 20%;
+  }
+
+  .image {
+    flex-basis: 80%;
+  }
+
+  .image img.color {
+    height: 60%;
+  }
+
+  /* menu */
+  nav {
+    width: 100px;
+  }
+
+  main {
+    margin-left: 100px;
+  }
+
+  /* hobby */
+  .hobby div {
+    height: 20vh;
+  }
+
+  .hobby p {
+    line-height: 20vh;
+  }
+
+  /* projects */
+  .project {
+    flex-direction: column;
+  }
+
+  .project img {
+    width: 100%;
+  }
+
+  .project:nth-of-type(even) img {
+    order: 0;
+  }
+
+  .project .info h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+
+  /* contact */
+  .contact form {
+    width: 60%;
+  }
+
+  /* footer */
+  footer {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  html {
+    font-size: 12px;
+  }
+
+  /* header */
+  .text {
+    flex-basis: 30%;
+  }
+
+  .image img.gray {
+    left: 0;
+  }
+
+  /* menu */
+  nav {
+    width: 80px;
+  }
+
+  main,
+  footer {
+    margin-left: 80px;
+  }
+
+  /* skills */
+  .skills .icons {
+    flex-basis: 45%;
+  }
+
+  /* projects */
+  .project ul {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .project ul li {
+    flex-basis: 35%;
+    margin-bottom: 10px;
+  }
+
+  /* contact */
+  .contact form {
+    width: 80%;
+  }
+
+  .contact textarea {
+    flex-basis: 250px;
+  }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  html {
+    font-size: 9px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  /* header */
+  .text p {
+    font-size: 2rem;
+
+  }
+
+  /* menu */
+  nav {
+    width: 50px;
+  }
+
+  main,
+  footer {
+    margin-left: 50px;
+  }
+
+  footer a {
+    margin-right: 10px;
+  }
+
+  /* hobby */
+  .hobby div {
+    flex-basis: 100%;
+    height: 30vh;
+  }
+
+  .hobby p {
+    line-height: 30vh;
+  }
+
+  /* skills */
+  .skills .icons {
+    flex-basis: 48%;
+  }
+
+  .icons img {
+    height: 50px;
+  }
+
+  .icons span {
+    line-height: 50px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 375px) and (orientation: portrait) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+  .hobby div {
+    height: 29vh;
+  }
+
+  .icons img {
+    height: 40px;
+  }
+
+  .icons span {
+    line-height: 40px;
+  }
+
+  .contact textarea {
+    flex-basis: 200px;
+  }
+}
